@@ -1,5 +1,13 @@
+import { useState } from "react"
+
 const Counter = () => {
-    return <h1>This comp should be the button that changes the count state</h1>
+
+    const [count, setCount] = useState(0)
+    let increaseCount = () => {
+        setCount((count + 1))
+    }
+    
+    return <button onClick={increaseCount}>+</button>
 }
 
 export default Counter

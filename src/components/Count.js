@@ -1,5 +1,7 @@
-const Count = () => {
-    return <h1>This component should show the current count: IE: 9</h1>
+import Counter from "./Counter"
+
+const Count = ({count}) => {
+    return <h1>Count: {count}</h1>
 }
 
 export default Count
